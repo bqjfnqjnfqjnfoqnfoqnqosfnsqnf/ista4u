@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prodycts web site</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header shadow">
+            <h1>FOR ALL THE PRODUCT</h1>
+            <h3>PRODUCT MANAGEMENT SYSTEM</h3>
+        </div>
+        <div class="section">
+            <input type="text" placeholder="Title" name="title" id="title">
+            <div class="inputs">
+                <input type="number" name="total" id="price" placeholder="price" onkeyup="get_total()">
+                <input type="number" name="total" id="taxes" placeholder="taxes" onkeyup="get_total()">
+                <input type="number" name="total" id="ads" placeholder="ads" onkeyup="get_total()">
+                <input type="number" name="total" id="discount" placeholder="discount" onkeyup="get_total()">
+                <span id="TOTAL">TOTAL:</span>
+            </div>
+            <input type="number" name="count" id="count" placeholder="Count">
+            <input type="text" name="category" id="category" placeholder="category">
+            <button id="create">Create</button>
+            <input onkeyup="search_data(this.value)" type="text" placeholder="Search.." id="search">
+            <div class="btns">
+                <button onclick="Search(this.id)" id="search_title">Search By Title</button>
+                <button onclick="Search(this.id)" id="search_category">search By Category</button>
+            </div>
+        </div>
+     <div id="delete_all">
+         
+     </div>
+            <table class="table">
+                <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>price</th>
+                    <th>taxes</th>
+                    <th>ads</th>
+                    <th>discount</th>
+                    <th>total</th>
+                    <th>count</th>
+                    <th>category</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </tr>
+                <tbody id="tbody">
+                    
+                    
+                        <!-- <td><button id="update">update</button></td>
+                        <td><button id="delete">delete</button></td> -->
+                    
+                </tbody>
+            </table>
+    </div>
+
+    <script src="inedx.js"></script>
+</body>
+</html>

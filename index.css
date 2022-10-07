@@ -1,0 +1,67 @@
+*{
+    background-color: rgb(31, 31, 31);
+    color: white;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+input{
+    padding: 16px;
+    width: 100%;
+    background-color: #111;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    margin: 8px 0;
+}
+.container .inputs{
+    display: flex;
+}
+.container .inputs input{
+    margin: 0 5px;
+}
+.container .inputs #TOTAL{
+    background-color: rgb(50, 50, 116);
+    display: inline-block;
+    border-radius: 8px;
+    padding: 20px 10px;
+}
+button{
+    background-color: rgb(57, 57, 164);
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius:18px ;
+    font-size: larger;
+    margin: 10px 0;
+}
+button:hover{
+    background-color:rgb(74, 27, 127);
+    letter-spacing: 1px;
+
+  
+}
+.btns{
+    display: flex;
+    justify-content:space-between;
+}
+#create{
+    width: 100%;
+}
+#search_title{
+    width: 46%;
+}
+#search_category{
+    width: 46%;
+}
+table{
+    width: 100%;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+th,td{
+    padding: 7px;
+}
